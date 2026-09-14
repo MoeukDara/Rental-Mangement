@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&display=swap');
+@import 'tailwindcss';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: transparent transparent;
+}
+
+*:hover {
+  scrollbar-color: #2d4a3e40 transparent;
+}
+
+:root {
+  --background: #F5F3EE;
+  --foreground: #0F1A14;
+  --card: #FFFFFF;
+  --card-foreground: #0F1A14;
+  --primary: #1A6B4A;
+  --primary-foreground: #FFFFFF;
+  --secondary: #E8EDE8;
+  --secondary-foreground: #1A3328;
+  --muted: #EAE8E2;
+  --muted-foreground: #6B7867;
+  --accent: #C8873A;
+  --accent-foreground: #FFFFFF;
+  --border: #DDD9D0;
+  --ring: #1A6B4A40;
+  --radius: 6px;
+  --sidebar: #0D1F17;
+  --sidebar-foreground: #C8D5CA;
+  --sidebar-active: #1A6B4A;
+  --sidebar-hover: #162B1E;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-active: var(--sidebar-active);
+  --color-sidebar-hover: var(--sidebar-hover);
+  --radius-default: var(--radius);
+  --font-display: 'Roboto Slab', Georgia, serif;
+  --font-body: 'Inter', system-ui, sans-serif;
+  --font-mono: 'DM Mono', 'Courier New', monospace;
+}
+
+body {
+  font-family: var(--font-body);
+  background-color: var(--background);
+  color: var(--foreground);
+  -webkit-font-smoothing: antialiased;
+}
